@@ -5,7 +5,9 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-
+    "GiftCommandMixin",
+    "PokeColorCommandMixin",
+    "WikiCommandMixin"
   ],
   "injectors": {
     "defaultRequire": 1
