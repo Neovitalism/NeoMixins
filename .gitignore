@@ -1,0 +1,5 @@
+.gitattributes
+.gradle
+.idea
+gradlew
+gradlew.bat
