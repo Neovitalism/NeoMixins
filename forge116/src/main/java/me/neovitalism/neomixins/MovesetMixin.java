@@ -5,11 +5,11 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("neomixins")
-public class NeoMixins {
+@Mod("movesetmixin")
+public class MovesetMixin {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public NeoMixins() {
+    public MovesetMixin() {
         LOGGER.log(Level.INFO, "Loaded!");
     }
 }
