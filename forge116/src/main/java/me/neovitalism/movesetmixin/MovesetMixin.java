@@ -1,4 +1,4 @@
-package me.neovitalism.neomixins;
+package me.neovitalism.movesetmixin;
 
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;

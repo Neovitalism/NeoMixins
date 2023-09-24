@@ -1,4 +1,4 @@
-package me.neovitalism.neomixins.mixins;
+package me.neovitalism.movesetmixin.mixins;
 
 import com.pixelmonmod.pixelmon.api.pokemon.stats.Moveset;
 import com.pixelmonmod.pixelmon.battles.attacks.Attack;
