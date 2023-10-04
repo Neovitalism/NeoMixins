@@ -1,15 +1,15 @@
-package me.neovitalism.neomixins;
+package me.neovitalism.spectatemixin;
 
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("neomixins")
-public class NeoMixins {
+@Mod("spectatemixin")
+public class SpectateMixin {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public NeoMixins() {
+    public SpectateMixin() {
         LOGGER.log(Level.INFO, "Loaded!");
     }
 }
