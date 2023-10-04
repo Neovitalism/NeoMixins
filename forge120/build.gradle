@@ -50,7 +50,7 @@ dependencies {
     implementation 'org.jetbrains:annotations:24.0.1'
 
     minecraft "net.minecraftforge:forge:1.20.1-47.1.44"
-    implementation fg.deobf('pixelmon:Pixelmon-1.20.1-9.2.2-server:9.2.2')
+    implementation fg.deobf('pixelmon:Pixelmon-1.20.1-9.2.3-server:9.2.3')
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
