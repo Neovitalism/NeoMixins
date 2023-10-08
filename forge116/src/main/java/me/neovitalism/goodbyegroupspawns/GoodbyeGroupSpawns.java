@@ -1,15 +1,15 @@
-package me.neovitalism.neomixins;
+package me.neovitalism.goodbyegroupspawns;
 
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("neomixins")
-public class NeoMixins {
+@Mod("goodbyegroupspawns")
+public class GoodbyeGroupSpawns {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public NeoMixins() {
+    public GoodbyeGroupSpawns() {
         LOGGER.log(Level.INFO, "Loaded!");
     }
 }
