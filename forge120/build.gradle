@@ -29,7 +29,7 @@ archivesBaseName = "${rootProject.mod_name}"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'official', version: '1.20.2'
 }
 
 repositories {
@@ -49,8 +49,8 @@ repositories {
 dependencies {
     implementation 'org.jetbrains:annotations:24.0.1'
 
-    minecraft "net.minecraftforge:forge:1.20.1-47.1.44"
-    implementation fg.deobf('pixelmon:Pixelmon-1.20.1-9.2.3-server:9.2.3')
+    minecraft "net.minecraftforge:forge:1.20.2-48.0.30"
+    implementation fg.deobf('pixelmon:Pixelmon-1.20.2-9.2.4-server:9.2.4')
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
