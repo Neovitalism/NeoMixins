@@ -1,5 +1,8 @@
 package me.neovitalism.goodbyegroupspawns.mixins;
 
+import com.pixelmonmod.pixelmon.api.spawning.AbstractSpawner;
+import com.pixelmonmod.pixelmon.api.spawning.SpawnLocation;
+import com.pixelmonmod.pixelmon.api.spawning.archetypes.entities.pokemon.SpawnInfoPokemon;
 import com.pixelmonmod.pixelmon.api.spawning.archetypes.group.GroupSpawnSettings;
 import com.pixelmonmod.pixelmon.entities.SpawnLocationType;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
@@ -24,7 +27,17 @@ public abstract class GroupSpawnSettingsMixin {
      * @reason GoodbyeGroupSpawns
      */
     @Overwrite
-    public PixelmonEntity spawnPokemon(Level level, BlockPos center, SpawnLocationType spawnLocationType, int flockId) {
+    public int getRandomAmount() {
+        return 0;
+    }
+
+    /**
+     * @author Neovitalism
+     * @reason GoodbyeGroupSpawns
+     */
+    @Overwrite
+    public PixelmonEntity spawnPokemon(Level par1, BlockPos par2, SpawnLocationType par3, int par4,
+                                       AbstractSpawner par5, SpawnInfoPokemon par6, SpawnLocation par7) {
         return null;
     }
 }
