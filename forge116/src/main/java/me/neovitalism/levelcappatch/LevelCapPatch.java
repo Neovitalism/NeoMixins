@@ -1,15 +1,15 @@
-package me.neovitalism.neomixins;
+package me.neovitalism.levelcappatch;
 
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("neomixins")
-public class NeoMixins {
+@Mod("levelcappatch")
+public class LevelCapPatch {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public NeoMixins() {
+    public LevelCapPatch() {
         LOGGER.log(Level.INFO, "Loaded!");
     }
 }
