@@ -5,7 +5,8 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-
+    "EmptyPokeBallEntityMixin",
+    "PokeBallItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
