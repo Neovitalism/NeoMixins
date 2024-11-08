@@ -1,4 +1,4 @@
-rootProject.name = 'NeoMixins'
+rootProject.name = 'BrokeTrainers'
 include 'forge116'
 include 'forge120'
 
