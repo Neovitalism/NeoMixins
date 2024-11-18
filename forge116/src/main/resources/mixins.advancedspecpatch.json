@@ -5,7 +5,7 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-
+    "UltraBeastRequirementMixin"
   ],
   "injectors": {
     "defaultRequire": 1
