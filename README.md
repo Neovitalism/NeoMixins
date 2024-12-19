@@ -2,7 +2,7 @@
 
 | **Mixin** | **Description** | **1.16 (Latest: 9.1.13)** | **1.20 (Latest: 9.2.10)** | 
 |-|-|-|-|
-| [**SaveTheBedrock**](<https://github.com/Neovitalism/NeoMixins/releases/tag/SaveTheBedrock-1.0.1>) | A mixin to stop Pixelmon hammers from breaking bedrock. | `Available` | `N/A` |
+| [**SaveTheBedrock**](<https://github.com/Neovitalism/NeoMixins/releases/tag/SaveTheBedrock-1.0.1>) | A mixin to stop Pixelmon hammers from breaking bedrock. | `Required` | `N/A` |
 | [**AdvancedSpecPatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/AdvancedSpecPatch-1.0.0>) | For now, this simply fixes the ultra beast requirement not being negatable. | `Optional` | `N/A` |
 | [**BrokeTrainers**](<https://github.com/Neovitalism/NeoMixins/releases/tag/BrokeTrainers-1.0.0>) | A mixin to disable trainer winMoney. | `Optional` | `Optional` |
 | [**PokeballDataStorage**](<https://github.com/Neovitalism/NeoMixins/releases/tag/PokeballDataStorage-1.0.0>) | This mixin changes/fixes multiple things to do with pokeballs on both 1.16 and 1.20. | `Optional` | `Optional` |
