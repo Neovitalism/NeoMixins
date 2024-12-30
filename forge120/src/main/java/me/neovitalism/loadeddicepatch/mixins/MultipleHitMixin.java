@@ -37,7 +37,6 @@ public abstract class MultipleHitMixin extends AttackModifierBase {
         if (user.getBattleAbility() instanceof SkillLink) timesShouldHit = this.maxHits;
         else if (user.getBattleAbility() instanceof BattleBond && user.attack.isAttack(AttackRegistry.WATER_SHURIKEN) && user.getForm().isForm("ash")) timesShouldHit = 3;
         else if (this.maxHits != 0) {
-            if (user.hasHeldItem() && user.getUsableHeldItem().getHeldItemType() == EnumHeldItems.loadedDice) minHits = Math.min(this.maxHits, 4);
             if (minHits == 2 && this.maxHits == 5) {
                 int random = RandomHelper.getRandomNumberBetween(0, 9);
                 if (user.bc.simulateMode) timesShouldHit = 1;
@@ -45,6 +44,9 @@ public abstract class MultipleHitMixin extends AttackModifierBase {
                 else if (random < 6) timesShouldHit = 3;
                 else if (random < 8) timesShouldHit = 4;
                 else timesShouldHit = 5;
+                if (timesShouldHit < 4 && user.hasHeldItem() && user.getUsableHeldItem().getHeldItemType() == EnumHeldItems.loadedDice) {
+                    timesShouldHit = RandomHelper.getRandomNumberBetween(4, 5);
+                }
             } else timesShouldHit = RandomHelper.getRandomNumberBetween(minHits, this.maxHits);
         }
         if (target.isRaidPokemon() && ((RaidPixelmonParticipant) target.getParticipant()).areShieldsUp()) timesShouldHit = 1;
