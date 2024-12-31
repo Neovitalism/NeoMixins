@@ -26,7 +26,6 @@ public abstract class MultipleHitMixin extends AttackModifierBase {
     /**
      * @author Neovitalism
      * @reason Fixes loaded dice. This whole system hurts my eyes and my soul. Please send help.
-     * P.S. Sorry for the overwrite. Stuff needed changing for the sake of my own sanity.
      * Altering fields on a registry object is pain. Can someone please come make these values final?
      */
     @Overwrite
@@ -73,7 +72,7 @@ public abstract class MultipleHitMixin extends AttackModifierBase {
         }
         user.inMultipleHit = false;
         user.attack.sendEffectiveChat(user, target);
-        if (timesHit > 1) user.bc.sendToAll("multiplehit.times", user.getNickname(), timesHit);
+        if (timesHit > 0) user.bc.sendToAll("multiplehit.times", user.getNickname(), timesHit);
         Attack.postProcessAttackAllHits(user, target, user.attack, user.attack.moveResult == null ? 0.0F : (float) user.attack.moveResult.damage, DamageTypeEnum.ATTACK, hasSubstitute);
         if (!hasSubstitute) Attack.applyContactLate(user, target);
         return AttackResult.hit;

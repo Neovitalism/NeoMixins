@@ -26,7 +26,6 @@ public abstract class MultipleHitMixin extends AttackModifierBase {
     /**
      * @author Neovitalism
      * @reason Fixes loaded dice. This whole system hurts my eyes and my soul. Please send help.
-     * P.S. Sorry for the overwrite. Stuff needed changing for the sake of my own sanity.
      * Altering fields on a registry object is pain. Can someone please come make these values final?
      */
     @Overwrite
