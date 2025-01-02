@@ -2,7 +2,7 @@
 
 | **Mixin**                                                                                                    | **Description** | **1.16 (Latest: 9.1.13)** | **1.20 (Latest: 9.2.10)** | 
 |--------------------------------------------------------------------------------------------------------------|-|-|-|
-| [**LoadedDicePatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/LoadedDicePatch-1.0.2>)         | Fixes loaded dice and massively cleans up (and slightly optimizes) general multiple hit moves. | `Required` | `Required` |
+| [**LoadedDicePatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/LoadedDicePatch-1.0.3>)         | Fixes loaded dice and massively cleans up (and optimizes) general multiple hit moves. | `Required` | `Required` |
 | [**SaveTheBedrock**](<https://github.com/Neovitalism/NeoMixins/releases/tag/SaveTheBedrock-1.0.1>)           | A mixin to stop Pixelmon hammers from breaking bedrock. | `Required` | `N/A` |
 | [**AdvancedSpecPatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/AdvancedSpecPatch-1.0.0>)     | For now, this simply fixes the ultra beast requirement not being negatable. | `Optional` | `N/A` |
 | [**BrokeTrainers**](<https://github.com/Neovitalism/NeoMixins/releases/tag/BrokeTrainers-1.0.0>)             | A mixin to disable trainer winMoney. | `Optional` | `Optional` |

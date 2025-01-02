@@ -12,4 +12,8 @@ public class LoadedDicePatch {
     public LoadedDicePatch() {
         LOGGER.log(Level.INFO, "Loaded!");
     }
+
+    public static void logForDebug(String output) {
+        LOGGER.log(Level.WARN, output);
+    }
 }
