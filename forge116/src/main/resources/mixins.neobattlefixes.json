@@ -5,6 +5,8 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ElectricTerrainMixin",
+    "GlaiveRushLockMixin",
     "MultipleHitMixin",
     "PopulationBombMixin",
     "ScaleShotMixin",

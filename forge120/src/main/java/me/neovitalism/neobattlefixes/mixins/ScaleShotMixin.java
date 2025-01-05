@@ -1,4 +1,4 @@
-package me.neovitalism.loadeddicepatch.mixins;
+package me.neovitalism.neobattlefixes.mixins;
 
 import com.pixelmonmod.pixelmon.battles.attacks.Attack;
 import com.pixelmonmod.pixelmon.battles.attacks.DamageTypeEnum;
@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(value = ScaleShot.class, remap = false)
 public abstract class ScaleShotMixin {
     @Inject(method = "dealtDamage", at = @At(value = "HEAD"), cancellable = true)
-    public void ldp$dealtDamage(PixelmonWrapper attacker, PixelmonWrapper defender, Attack attack, DamageTypeEnum damageType, CallbackInfo callback) {
+    public void neoBattleFixes$dealtDamage(PixelmonWrapper attacker, PixelmonWrapper defender, Attack attack, DamageTypeEnum damageType, CallbackInfo callback) {
         if (damageType != DamageTypeEnum.ATTACK) callback.cancel();
     }
 }

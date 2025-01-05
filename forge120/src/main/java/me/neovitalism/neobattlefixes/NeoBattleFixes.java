@@ -1,15 +1,15 @@
-package me.neovitalism.loadeddicepatch;
+package me.neovitalism.neobattlefixes;
 
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("loadeddicepatch")
-public class LoadedDicePatch {
+@Mod("neobattlefixes")
+public class NeoBattleFixes {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public LoadedDicePatch() {
+    public NeoBattleFixes() {
         LOGGER.log(Level.INFO, "Loaded!");
     }
 

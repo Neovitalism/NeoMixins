@@ -1,4 +1,4 @@
-package me.neovitalism.loadeddicepatch.mixins;
+package me.neovitalism.neobattlefixes.mixins;
 
 import com.pixelmonmod.pixelmon.api.battles.attack.AttackRegistry;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.BattleBond;
@@ -14,8 +14,6 @@ import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.controller.participants.RaidPixelmonParticipant;
 import com.pixelmonmod.pixelmon.battles.status.StatusType;
 import com.pixelmonmod.pixelmon.enums.heldItems.EnumHeldItems;
-import me.neovitalism.loadeddicepatch.LoadedDicePatch;
-import org.apache.logging.log4j.Level;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;

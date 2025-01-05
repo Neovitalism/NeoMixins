@@ -1,4 +1,4 @@
-package me.neovitalism.loadeddicepatch.mixins;
+package me.neovitalism.neobattlefixes.mixins;
 
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.SkillLink;
 import com.pixelmonmod.pixelmon.battles.attacks.Attack;
