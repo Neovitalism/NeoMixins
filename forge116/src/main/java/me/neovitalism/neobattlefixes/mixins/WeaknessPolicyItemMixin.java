@@ -22,9 +22,7 @@ public abstract class WeaknessPolicyItemMixin extends HeldItem {
      * @reason Fix Rocky Helmet activating Weakness Policy.
      */
     @Overwrite
-    public void postProcessDamagingAttackTarget(PixelmonWrapper attacker, PixelmonWrapper target, Attack attack, float damage) {
-
-    }
+    public void postProcessDamagingAttackTarget(PixelmonWrapper attacker, PixelmonWrapper target, Attack attack, float damage) {}
 
     @Override
     public void tookDamage(PixelmonWrapper attacker, PixelmonWrapper defender, float damage, DamageTypeEnum damageType) {
