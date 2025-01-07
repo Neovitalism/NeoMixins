@@ -12,7 +12,8 @@
     "PopulationBombMixin",
     "ScaleShotMixin",
     "TripleAxelMixin",
-    "TripleKickMixin"
+    "TripleKickMixin",
+    "WeaknessPolicyItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
