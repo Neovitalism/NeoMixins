@@ -8,6 +8,7 @@
     "BoosterEnergyItemMixin",
     "ElectricTerrainMixin",
     "GlaiveRushLockMixin",
+    "LifeOrbItemMixin",
     "MultipleHitMixin",
     "PopulationBombMixin",
     "ScaleShotMixin",
