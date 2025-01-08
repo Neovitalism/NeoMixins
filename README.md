@@ -1,15 +1,33 @@
-# NeoMixins Statuses:
+**Before patch:**
+- Two people using the same multiple hit move at the same exact time can potentially be a problem due to shared variables. (Not super possible for me to test, but we know this is fixed post patch since it no longer uses a shared variable.)
+- Loaded dice when used with a multiple hit move would cause every instance of the move used to ALWAYS hit 4 or more times, even after removing the held item, until server restart. (I.E. Pokémon holding the loaded dice could use Icicle Spear, and until server restart, every single Pokémon using Icicle Spear would hit 4 or 5 times.)
+- Loaded dice affected moves that it should not affect, since it should only affect moves that hit 2-5 times (and Population Bomb). (I.E. Surging Strikes.)
+- Triple Axel and Triple Kick did not properly calculate the damage they should do.
+- Triple Axel, Triple Kick, and Population Bomb would always miss on the Pokémon's first use of the move in every battle.
+- Population Bomb would reroll how many times it should hit every time it hit while using loaded dice, causing a higher chance of lower range hits after the guaranteed 4.
+- A single use of Population Bomb with a loaded dice would also cause every single Pokémon using Population Bomb to trigger above, regardless of holding the item or not, until a server restart.
+- Scale Shot buffs the attacker when damaging the opponent AFTER using the move.
+- Life Orb users take recoil from attacks that do no damage.
+- Life Orb can still do recoil beyond Magic Guard and Sheer Force due to a shared variable.
+- Swapping in a Paradox pokémon equipped with a booster energy when a terrain is ending will crash the battle.
+- (1.16) Weakness Policy can activate when damaged via a Rocky Helmet.
+- (1.16) Rising Voltage in Electric Terrain does 4x damage instead of 2.6x. (70 x 2 x 2)
+- (1.16) Glaive Rush users do not take double the damage until the next turn.
 
-| **Mixin**                                                                                                    | **Description** | **1.16 (Latest: 9.1.13)** | **1.20 (Latest: 9.2.10)** | 
-|--------------------------------------------------------------------------------------------------------------|-|-|-|
-| [**LoadedDicePatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/LoadedDicePatch-1.0.3>)         | Fixes loaded dice and massively cleans up (and optimizes) general multiple hit moves. | `Required` | `Required` |
-| [**SaveTheBedrock**](<https://github.com/Neovitalism/NeoMixins/releases/tag/SaveTheBedrock-1.0.1>)           | A mixin to stop Pixelmon hammers from breaking bedrock. | `Required` | `N/A` |
-| [**AdvancedSpecPatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/AdvancedSpecPatch-1.0.0>)     | For now, this simply fixes the ultra beast requirement not being negatable. | `Optional` | `N/A` |
-| [**BrokeTrainers**](<https://github.com/Neovitalism/NeoMixins/releases/tag/BrokeTrainers-1.0.0>)             | A mixin to disable trainer winMoney. | `Optional` | `Optional` |
-| [**PokeballDataStorage**](<https://github.com/Neovitalism/NeoMixins/releases/tag/PokeballDataStorage-1.0.0>) | This mixin changes/fixes multiple things to do with pokeballs on both 1.16 and 1.20. | `Optional` | `Optional` |
-| **LevelCapPatch**                                                                                            | A mixin to fix level cap not recalculating Pokémon's health in Pixelmon 9.1.12. | `Fixed 9.1.13` | `N/A` |
-| **CaptureCalculationFix**                                                                                    | A mixin to fix out of battle captures always failing in Pixelmon 9.1.11. | `Fixed 9.1.12` | `N/A` |
-| [**GoodbyeGroupSpawns**](<https://github.com/Neovitalism/NeoMixins/releases/tag/GoodbyeGroupSpawns-1.0.2>)   | A mixin that disables Pixelmon's group spawning. | `Optional` | `Optional` |
-| [**SpectateMixin**](<https://github.com/Neovitalism/NeoMixins/releases/tag/SpectateMixin-1.0.2>)             | A mixin which changes Pixelmon's /spectate command to /spectatebattle to avoid the conflict with Minecraft. | `Optional` | `Optional` |
-| [**NoEggSpoilers**](<https://github.com/Neovitalism/NeoMixins/releases/tag/NoEggSpoilers-1.0.1>)             | A mixin created to stop certain Pixelmon commands from spoiling what's inside an egg. | `Optional` | `Optional` |
-| **MovesetMixin**                                                                                             | A mixin created to stop the server from crashing when eggs are hatched. | `Fixed 9.1.8` | `Fixed 9.2.3` |
+**After patch:**
+- Using multiple hit moves no longer share any "non-final" variables, removing the chance for any issues related to it.
+    - This also granted the ability to remove logic that became redundant.
+- Loaded dice now work correctly, and only affect moves on Pokémon HOLDING the item.
+- Loaded dice now only affect moves that hit 2-5 times (and Population Bomb), as intended.
+- Multiple hit moves are optimized due to effective use of `else` and better ordering.
+- Triple Axel and Triple Kick now do the correct amount of damage.
+- Triple Axel, Triple Kick, and Population Bomb no longer miss on every Pokémon's first use of the move in every battle.
+- Population Bomb now only rolls how many hits it should do once when using loaded dice.
+- Population Bomb now works per-usage instead of sharing a variable that caused issues.
+- Scale Shot no longer buffs the attacker after the initial buff from using the move.
+- Life Orb users only take recoil from attacks that do damage.
+- Life Orb will no longer do recoil to Magic Guard or Sheer Force under the correct circumstances.
+- Swapping in a Paradox pokémon equipped with a booster energy when a terrain is ending will no longer crash the battle.
+- (1.16) Weakness Policy will now only activate when hit with a super effective attack.
+- (1.16) Rising Voltage in Electric Terrain correctly does 2.6x the damage. (70 x 2 x 1.3)
+- (1.16) Glaive Rush users properly take double the damage until the next turn.
