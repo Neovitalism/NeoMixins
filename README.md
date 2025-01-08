@@ -1,4 +1,4 @@
-**Before patch:**
+### **Before patch:**
 - Two people using the same multiple hit move at the same exact time can potentially be a problem due to shared variables. (Not super possible for me to test, but we know this is fixed post patch since it no longer uses a shared variable.)
 - Loaded dice when used with a multiple hit move would cause every instance of the move used to ALWAYS hit 4 or more times, even after removing the held item, until server restart. (I.E. Pokémon holding the loaded dice could use Icicle Spear, and until server restart, every single Pokémon using Icicle Spear would hit 4 or 5 times.)
 - Loaded dice affected moves that it should not affect, since it should only affect moves that hit 2-5 times (and Population Bomb). (I.E. Surging Strikes.)
@@ -14,7 +14,7 @@
 - (1.16) Rising Voltage in Electric Terrain does 4x damage instead of 2.6x. (70 x 2 x 2)
 - (1.16) Glaive Rush users do not take double the damage until the next turn.
 
-**After patch:**
+### **After patch:**
 - Using multiple hit moves no longer share any "non-final" variables, removing the chance for any issues related to it.
     - This also granted the ability to remove logic that became redundant.
 - Loaded dice now work correctly, and only affect moves on Pokémon HOLDING the item.
