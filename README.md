@@ -2,7 +2,7 @@
 
 | **Mixin** | **Description** | **1.16 (Latest: 9.1.13)** | **1.20 (Latest: 9.2.10)** | 
 |-|-|-|-|
-| [**EvolutionQueryMixin**](<https://github.com/Neovitalism/NeoMixins/releases/tag/EvolutionQueryMixin-1.0.0>) | Fixes a potential memory leak in Pixelmon. | `Required` | `Required` |
+| [**EvolutionQueryMixin**](<https://github.com/Neovitalism/NeoMixins/releases/tag/EvolutionQueryMixin-1.0.0>) | Fixes an issue with Pixelmon's EvolutionQuery that could lead to a potential memory leak. | `Required` | `N/A` |
 | [**NeoBattleFixes**](<https://github.com/Neovitalism/NeoMixins/releases/tag/NeoBattleFixes-1.0.0>) | Fixes various battle mechanics in Pixelmon. | `Required` | `Required` |
 | [**SaveTheBedrock**](<https://github.com/Neovitalism/NeoMixins/releases/tag/SaveTheBedrock-1.0.1>) | A mixin to stop Pixelmon hammers from breaking bedrock. | `Required` | `N/A` |
 | [**AdvancedSpecPatch**](<https://github.com/Neovitalism/NeoMixins/releases/tag/AdvancedSpecPatch-1.0.0>) | For now, this simply fixes the ultra beast requirement not being negatable. | `Optional` | `N/A` |
